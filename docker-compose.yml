@@ -40,17 +40,17 @@ services:
     depends_on:
       - db
 
+  web:
+    build: ./web
+    container_name: web
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+
 volumes:
   dp_data:
-
-  # dashboard:
-  #   build: ./web
-  #   container_name: dashboard
-  #   restart: unless-stopped
-  #   depends_on:
-  #     - trader
-  #   ports:
-  #     - "3000:3000"
-  #   volumes:
-  #     - ./web:/app
-  #     - /app/node_modules

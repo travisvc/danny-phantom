@@ -1,6 +1,7 @@
 import uvicorn
 from logger import Logger
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from db import Extrinsic, Tick, Database
 from datetime import datetime, timedelta
 from typing import Optional
@@ -9,6 +10,15 @@ from typing import Optional
 logger = Logger.get_logger(__name__)
 
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 db = Database()
 session = db.Session()
