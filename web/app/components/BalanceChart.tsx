@@ -216,7 +216,7 @@ export default function BalanceChart({ data }: BalanceChartProps) {
         <Line
           type="monotone"
           dataKey="total"
-          stroke="#3b82f6"
+          stroke="#BCE5DD"
           strokeWidth={2}
           dot={false}
         />

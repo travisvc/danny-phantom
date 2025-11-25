@@ -93,22 +93,22 @@ export default function Home() {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-black">
+      <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-[#111112]">
         <div className="text-xl">Loading dashboard...</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-black p-8">
+    <div className="min-h-screen bg-zinc-50 dark:bg-[#111112] p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8 text-zinc-900 dark:text-zinc-100">
+        <h1 className="text-4xl font-bold mb-8 text-[#161617] dark:text-zinc-100">
           The Shadow Realm
         </h1>
 
         {/* Balance Over Time Chart */}
-        <div className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow mb-8">
-          <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+        <div className="bg-white dark:bg-[#161617] p-6 rounded-lg shadow mb-8">
+          <h2 className="text-xl font-semibold text-[#161617] dark:text-zinc-100 mb-4">
             Balance
           </h2>
           <BalanceChart data={ticksChartData} />
@@ -116,30 +116,30 @@ export default function Home() {
 
         {/* Tables */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+          <div className="bg-white dark:bg-[#161617] p-6 rounded-lg shadow">
+            <h2 className="text-xl font-semibold text-[#161617] dark:text-zinc-100 mb-4">
               Ticks ({ticksCount.toLocaleString()})
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Block
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Time
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Total
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Alpha
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Root
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Free
                     </th>
                   </tr>
@@ -194,24 +194,24 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white dark:bg-zinc-900 p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
+          <div className="bg-white dark:bg-[#161617] p-6 rounded-lg shadow">
+            <h2 className="text-xl font-semibold text-[#161617] dark:text-zinc-100 mb-4">
               Extrinsics ({extrinsicsCount.toLocaleString()})
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-zinc-200 dark:border-zinc-700">
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Block
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Function
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Netuid
                     </th>
-                    <th className="text-left p-2 text-zinc-900 dark:text-zinc-100">
+                    <th className="text-left p-2 text-[#161617] dark:text-zinc-100">
                       Amount
                     </th>
                   </tr>

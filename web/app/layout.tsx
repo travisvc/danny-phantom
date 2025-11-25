@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "The Shadow Realm",
-  description: "Trading system monitoring dashboard",
+  description: "Welcome to the Shadow Realm!",
 };
 
 export default function RootLayout({
